@@ -32,3 +32,15 @@ form {
 input {
     max-width: 70px;
 }
+.results-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.results-img{
+    
+    flex-wrap: wrap;
+    max-width: 300px;
+    max-height: 300px;
+
+}
