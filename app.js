@@ -1,8 +1,17 @@
+
+
 function displayResults(responseJson){
+   let imageHTML = ''; 
     console.log(responseJson.message);
     for (let i=0; i < responseJson.message.length; i++){
-    $('.results-container').append( `<img src="${responseJson.message[i]}" class="results-img">`)}
+        imageHTML +=`<img src="${responseJson.message[i]}" class="results-img">`;
+        
+    }
+    $('.results-container').replaceWith(imageHTML); 
+         
+ ;
 }
+
 function getImage() {
 
     let imgAmount = document.getElementById('amount').value;
@@ -19,7 +28,7 @@ function handleSubmit() {
     $('form').submit(event => {
         event.preventDefault();
         getImage();
-        
+       
     })
 };
 
