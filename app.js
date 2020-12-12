@@ -7,7 +7,7 @@ function displayResults(responseJson){
         imageHTML +=`<img src="${responseJson.message[i]}" class="results-img">`;
         
     }
-    $('.results-container').replaceWith(imageHTML); 
+    $('.results-container').html(imageHTML); 
          
  ;
 }
